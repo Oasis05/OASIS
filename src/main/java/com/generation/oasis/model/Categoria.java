@@ -18,9 +18,6 @@ public class Categoria {
 	@NotNull
 	private String tipo;
 
-	@NotNull(message = "O Atributo Descrição é obrigatório")
-	private String descricao;
-
 	public Long getId() {
 		return id;
 	}
@@ -35,14 +32,6 @@ public class Categoria {
 
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
-	}
-
-	public String getDescricao() {
-		return descricao;
-	}
-
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
 	}
 	
 }
