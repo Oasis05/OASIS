@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -13,6 +14,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name = "tb_produtos")
@@ -36,6 +38,10 @@ public class Produto {
     @NotNull(message = "Preço é obrigatório!")
     @Positive(message = "O preço deve ser maior do que zero!")
     private BigDecimal preco;
+    
+    @ManyToOne
+    @JsonIgnoreProperties("produto")
+    private Categoria categoria;
 
     public Long getId() {
         return id;
