@@ -31,29 +31,25 @@ public class Produto {
     @NotNull(message = "O atributo data_validade é obrigatório!")
     private Date dataValidade;
 
-    @NotNull(message = "O atributo quantidade é obrigatório!")
-    private Integer quantidade;
-
     @JsonFormat(shape = JsonFormat.Shape.STRING)
     @NotNull(message = "Preço é obrigatório!")
     @Positive(message = "O preço deve ser maior do que zero!")
     private BigDecimal preco;
     
+    @NotNull(message = "O atributo estoque é Obrigatório")
+    private int estoque;
+    
     @ManyToOne
     @JsonIgnoreProperties("produto")
     private Categoria categoria;
 
-    public Long getId() {
-        return id;
-    }
+	public Long getId() {
+		return id;
+	}
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Date getDataValidade() {
-        return dataValidade;
-    }
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getNomeProduto() {
 		return nomeProduto;
@@ -63,12 +59,12 @@ public class Produto {
 		this.nomeProduto = nomeProduto;
 	}
 
-	public Integer getQuantidade() {
-		return quantidade;
+	public Date getDataValidade() {
+		return dataValidade;
 	}
 
-	public void setQuantidade(Integer quantidade) {
-		this.quantidade = quantidade;
+	public void setDataValidade(Date dataValidade) {
+		this.dataValidade = dataValidade;
 	}
 
 	public BigDecimal getPreco() {
@@ -79,6 +75,14 @@ public class Produto {
 		this.preco = preco;
 	}
 
+	public int getEstoque() {
+		return estoque;
+	}
+
+	public void setEstoque(int estoque) {
+		this.estoque = estoque;
+	}
+
 	public Categoria getCategoria() {
 		return categoria;
 	}
@@ -86,10 +90,4 @@ public class Produto {
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
-
-	public void setDataValidade(Date dataValidade) {
-		this.dataValidade = dataValidade;
-	}
-
-    
 }
