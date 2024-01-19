@@ -26,7 +26,7 @@ public class Produto {
 
     @NotBlank(message = "O atributo nome é obrigatório!")
     @Size(min = 5, max = 255, message = "O atributo nome deve conter no mínimo 5 e no máximo 255 caracteres")
-    private String nome;
+    private String nomeProduto;
 
     @NotNull(message = "O atributo data_validade é obrigatório!")
     private Date dataValidade;
@@ -51,37 +51,45 @@ public class Produto {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public Date getDataValidade() {
         return dataValidade;
     }
 
-    public void setDataValidade(Date dataValidade) {
-        this.dataValidade = dataValidade;
-    }
+	public String getNomeProduto() {
+		return nomeProduto;
+	}
 
-    public Integer getQuantidade() {
-        return quantidade;
-    }
+	public void setNomeProduto(String nomeProduto) {
+		this.nomeProduto = nomeProduto;
+	}
 
-    public void setQuantidade(Integer quantidade) {
-        this.quantidade = quantidade;
-    }
+	public Integer getQuantidade() {
+		return quantidade;
+	}
 
-    public BigDecimal getPreco() {
-        return preco;
-    }
+	public void setQuantidade(Integer quantidade) {
+		this.quantidade = quantidade;
+	}
 
-    public void setPreco(BigDecimal preco) {
-        this.preco = preco;
-    }
-    
+	public BigDecimal getPreco() {
+		return preco;
+	}
+
+	public void setPreco(BigDecimal preco) {
+		this.preco = preco;
+	}
+
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
+
+	public void setDataValidade(Date dataValidade) {
+		this.dataValidade = dataValidade;
+	}
+
     
 }
