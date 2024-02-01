@@ -2,7 +2,7 @@
 
 ## Visão Geral:
 
-Este é um projeto integrador desenvolvido como parte do curso de Java, focado na criação de um E-commerce voltado para a promoção da Agricultura Sustentável e o combate à Fome. O projeto abraça os Objetivos de Desenvolvimento Sustentável (ODS) da ONU, especificamente o ODS 2 - Fome Zero e o ODS 12 - Consumo e Produção Sustentáveis.
+Este é um projeto integrador desenvolvido como parte do curso de Java, focado na criação de um E-commerce voltado para a promoção da Agricultura Sustentável e o combate à Fome. O projeto abraça os Objetivos de Desenvolvimento Sustentável (ODS) da ONU, especificamente o ODS 2 - Fome Zero e o ODS 12 - Consumo e Produção Sustentáveis.  
 
 ## Objetivos:
 
