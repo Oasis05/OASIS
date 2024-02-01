@@ -69,7 +69,7 @@ public class UsuarioService {
 
 			if (usuario.isPresent()) {
 			   usuarioLogin.get().setId(usuario.get().getId());
-                usuarioLogin.get().setNomeUsuario(usuario.get().getNome());
+                usuarioLogin.get().setNome(usuario.get().getNome());
                 usuarioLogin.get().setFoto(usuario.get().getFoto());
                 usuarioLogin.get().setToken(gerarToken(usuarioLogin.get().getUsuario()));
                 usuarioLogin.get().setSenha("");				

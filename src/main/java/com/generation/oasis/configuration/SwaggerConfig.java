@@ -15,7 +15,7 @@ import io.swagger.v3.oas.models.responses.ApiResponses;
 @Configuration
 public class SwaggerConfig {
 	@Bean
-    OpenAPI springBlogPessoalOpenAPI() {
+    OpenAPI springOasisOpenAPI() {
         return new OpenAPI()
             .info(new Info()
                 .title("Ecommerce Oasis")

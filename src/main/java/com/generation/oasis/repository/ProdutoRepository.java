@@ -7,8 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 import com.generation.oasis.model.Produto;
 
-public interface ProdutoRepository extends JpaRepository<Produto, Long>{
-    
-    public List<Produto> findAllByNomeProdutoContainingIgnoreCase(@Param("nomeProduto") String NomeProduto);
-    
+public interface ProdutoRepository extends JpaRepository<Produto, Long> {
+
+	public List<Produto> findAllByNomeContainingIgnoreCase (@Param("Nome") String nome);
 }
