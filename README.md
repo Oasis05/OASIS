@@ -33,4 +33,3 @@ Este é um projeto integrador desenvolvido como parte do curso de Java, focado n
 - Guilherme Abreu Do Nascimento
 - Isabella de Paula Albuquerque
 - Lauane Gonçalves C. da Silva
-- Rafael Seiji Ueno Teixeira
